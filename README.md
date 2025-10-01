@@ -2,7 +2,7 @@
 
 This is a copy of the "https://github.com/Mist-Automation-Programmability/mist_openapi" repo originally created by Thomas Munzer. The intention of this repo is to replace the repo it was copied from, and all further development of the openapi schema to occur in this repo.
 
-<img src="https://img.shields.io/swagger/valid/3.0?specUrl=https%3A%2F%2Fraw.githubusercontent.com%2Ftmunzer%2FMist-OAS%2Fmain%2Fmist.openapi.yml"> <img src="https://img.shields.io/github/license/tmunzer/Mist-OAS">
+<img src="https://img.shields.io/swagger/valid/3.0?specUrl=https%3A%2F%2Fraw.githubusercontent.com%2Fmistsys%2Fmist_openapi%2Frefs%2Fheads%2Fmaster%2Fmist.openapi.yaml"> <img src="https://img.shields.io/github/license/tmunzer/Mist-OAS">
 
 # Juniper-Mist OpenAPI 3.0 Specifications
 
