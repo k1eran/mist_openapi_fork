@@ -89783,7 +89783,7 @@ components:
           $ref: '#/components/schemas/rx_bps'
         rx_bytes:
           $ref: '#/components/schemas/rx_bytes'
-        rx_packets:
+        rx_pkts:
           $ref: '#/components/schemas/rx_pkts'
         rx_rate:
           $ref: '#/components/schemas/rx_rate'
@@ -89799,7 +89799,7 @@ components:
           $ref: '#/components/schemas/tx_bps'
         tx_bytes:
           $ref: '#/components/schemas/tx_bytes'
-        tx_packets:
+        tx_pkts:
           $ref: '#/components/schemas/tx_pkts'
         tx_rate:
           $ref: '#/components/schemas/tx_rate'
@@ -89855,15 +89855,9 @@ components:
       - ap_mac
       - band
       - channel
-      - family
-      - hostname
-      - ip
       - is_guest
       - key_mgmt
       - mac
-      - manufacture
-      - model
-      - os
       - proto
       - rssi
       - snr
@@ -89883,7 +89877,7 @@ components:
         id:
           $ref: '#/components/schemas/id'
         since:
-          type: integer
+          type: number
       type: object
     stats_wireless_client_rssi_zones:
       description: "List of rssizone_id\u2019s where client is in and since when (if\
@@ -89896,7 +89890,7 @@ components:
         id:
           $ref: '#/components/schemas/id'
         since:
-          type: integer
+          type: number
       type: object
     stats_wireless_client_vbeacons:
       description: "List of beacon_id\u2019s where the client is in and since when\
@@ -89922,7 +89916,7 @@ components:
         id:
           $ref: '#/components/schemas/id'
         since:
-          type: integer
+          type: number
       type: object
     stats_wireless_client_zones:
       description: "List of zone_id\u2019s where client is in and since when (if known)"
