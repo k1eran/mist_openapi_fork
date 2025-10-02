@@ -81593,7 +81593,6 @@ components:
       required:
       - id
       - uuid
-      - last_seen
       type: object
     sdkstats_wireless_client_vbeacon:
       properties:
@@ -87163,7 +87162,6 @@ components:
       - map_id
       - x
       - y
-      - last_seen
       type: object
     stats_beacons:
       description: Beacon statistics
@@ -88815,7 +88813,6 @@ components:
       required:
       - id
       - uuid
-      - last_seen
       - network_connection
       type: object
     stats_sdkclient_network_connection:
@@ -89539,7 +89536,6 @@ components:
       - y
       - rssi
       - manufacture
-      - last_seen
       type: object
     stats_unconnected_clients:
       items:
@@ -89864,23 +89860,14 @@ components:
       - ip
       - is_guest
       - key_mgmt
-      - last_seen
       - mac
       - manufacture
       - model
       - os
       - proto
       - rssi
-      - rx_bps
-      - rx_bytes
-      - rx_rate
-      - rx_retries
       - snr
       - ssid
-      - tx_bps
-      - tx_bytes
-      - tx_rate
-      - tx_retries
       - wlan_id
       type: object
     stats_wireless_client_airwatch:
@@ -95248,7 +95235,6 @@ components:
           type: boolean
       required:
       - id
-      - last_seen
       - org_id
       - site_id
       - timestamp
@@ -96652,7 +96638,6 @@ components:
       - mac
       - connection_rssi
       - site_id
-      - last_seen
       type: object
     webhook_sdkclient_scan_data_event_scan_data:
       items:
