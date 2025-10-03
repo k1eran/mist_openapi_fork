@@ -7,7 +7,7 @@ info:
 
     >
 
-    > Date: **October 3rd, 2025**
+    > Date: **October 3, 2025**
 
     <div class="notification"> NOTE:<br>Some important API changes will be introduced.
     Please make sure to read the <a href="https://www.juniper.net/documentation/us/en/software/mist/api/http/guides/important-api-changes">announcements</a>
@@ -70787,8 +70787,8 @@ components:
         inter_switch_link:
           default: false
           description: 'inter_switch_link is used together with "isolation" under
-            networks. NOTE: inter_switch_link works only between Juniper device. This
-            has to be applied to both ports connected together'
+            networks. NOTE: inter_switch_link works only between Juniper devices.
+            This has to be applied to both ports connected together'
           type: boolean
         mac_auth_only:
           description: Only if `enable_mac_auth`==`true`
@@ -90990,14 +90990,14 @@ components:
         inter_isolation_network_link:
           default: false
           description: Only if `mode`!=`dynamic`. `inter_isolation_network_link` is
-            used together with `isolation` under networks signaling that this port
-            connects to the networks isolated
+            used together with `isolation` under networks, signaling that this port
+            connects to isolated networks
           type: boolean
         inter_switch_link:
           default: false
           description: 'Only if `mode`!=`dynamic`. `inter_switch_link` is used together
             with `isolation` under networks. NOTE: `inter_switch_link` works only
-            between Juniper device. This has to be applied to both ports connected
+            between Juniper devices. This has to be applied to both ports connected
             together'
           type: boolean
         mac_auth_only:
