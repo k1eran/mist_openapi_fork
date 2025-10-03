@@ -81593,7 +81593,6 @@ components:
       required:
       - id
       - uuid
-      - last_seen
       type: object
     sdkstats_wireless_client_vbeacon:
       properties:
@@ -87163,7 +87162,6 @@ components:
       - map_id
       - x
       - y
-      - last_seen
       type: object
     stats_beacons:
       description: Beacon statistics
@@ -88815,7 +88813,6 @@ components:
       required:
       - id
       - uuid
-      - last_seen
       - network_connection
       type: object
     stats_sdkclient_network_connection:
@@ -89539,7 +89536,6 @@ components:
       - y
       - rssi
       - manufacture
-      - last_seen
       type: object
     stats_unconnected_clients:
       items:
@@ -89787,7 +89783,7 @@ components:
           $ref: '#/components/schemas/rx_bps'
         rx_bytes:
           $ref: '#/components/schemas/rx_bytes'
-        rx_packets:
+        rx_pkts:
           $ref: '#/components/schemas/rx_pkts'
         rx_rate:
           $ref: '#/components/schemas/rx_rate'
@@ -89803,7 +89799,7 @@ components:
           $ref: '#/components/schemas/tx_bps'
         tx_bytes:
           $ref: '#/components/schemas/tx_bytes'
-        tx_packets:
+        tx_pkts:
           $ref: '#/components/schemas/tx_pkts'
         tx_rate:
           $ref: '#/components/schemas/tx_rate'
@@ -89859,28 +89855,13 @@ components:
       - ap_mac
       - band
       - channel
-      - family
-      - hostname
-      - ip
       - is_guest
       - key_mgmt
-      - last_seen
       - mac
-      - manufacture
-      - model
-      - os
       - proto
       - rssi
-      - rx_bps
-      - rx_bytes
-      - rx_rate
-      - rx_retries
       - snr
       - ssid
-      - tx_bps
-      - tx_bytes
-      - tx_rate
-      - tx_retries
       - wlan_id
       type: object
     stats_wireless_client_airwatch:
@@ -89896,7 +89877,7 @@ components:
         id:
           $ref: '#/components/schemas/id'
         since:
-          type: integer
+          type: number
       type: object
     stats_wireless_client_rssi_zones:
       description: "List of rssizone_id\u2019s where client is in and since when (if\
@@ -89909,7 +89890,7 @@ components:
         id:
           $ref: '#/components/schemas/id'
         since:
-          type: integer
+          type: number
       type: object
     stats_wireless_client_vbeacons:
       description: "List of beacon_id\u2019s where the client is in and since when\
@@ -89935,7 +89916,7 @@ components:
         id:
           $ref: '#/components/schemas/id'
         since:
-          type: integer
+          type: number
       type: object
     stats_wireless_client_zones:
       description: "List of zone_id\u2019s where client is in and since when (if known)"
@@ -95248,7 +95229,6 @@ components:
           type: boolean
       required:
       - id
-      - last_seen
       - org_id
       - site_id
       - timestamp
@@ -96652,7 +96632,6 @@ components:
       - mac
       - connection_rssi
       - site_id
-      - last_seen
       type: object
     webhook_sdkclient_scan_data_event_scan_data:
       items:
