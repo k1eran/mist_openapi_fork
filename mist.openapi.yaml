@@ -3,7 +3,7 @@ info:
   contact:
     email: tmunzer@juniper.net
     name: Thomas Munzer
-  description: '> Version: **2509.1.3**
+  description: '> Version: **2509.1.4**
 
     >
 
@@ -51,7 +51,7 @@ info:
     name: MIT
     url: https://raw.githubusercontent.com/tmunzer/Mist-OAS3.0/main/LICENSE
   title: Mist API
-  version: 2509.1.3
+  version: 2509.1.4
   x-logo:
     altText: Juniper-MistAI
     backgroundColor: '#FFFFFF'
@@ -66493,6 +66493,12 @@ components:
           $ref: '#/components/schemas/tunnel_provider_options'
         type:
           $ref: '#/components/schemas/const_device_type_gateway'
+        url_filtering_deny_msg:
+          default: Access to this URL Category has been blocked
+          description: When a service policy denies a app_category, what message to
+            show in user's browser
+          example: Access to this URL Category has been blocked
+          type: string
         vars:
           $ref: '#/components/schemas/vars'
         vrf_config:
@@ -67013,6 +67019,12 @@ components:
           $ref: '#/components/schemas/tunnel_provider_options'
         type:
           $ref: '#/components/schemas/device_type_gateway'
+        url_filtering_deny_msg:
+          default: Access to this URL Category has been blocked
+          description: When a service policy denies a app_category, what message to
+            show in user's browser
+          example: Access to this URL Category has been blocked
+          type: string
         vrf_config:
           $ref: '#/components/schemas/vrf_config'
         vrf_instances:
