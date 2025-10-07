@@ -3,7 +3,7 @@ info:
   contact:
     email: tmunzer@juniper.net
     name: Thomas Munzer
-  description: '> Version: **2509.1.2**
+  description: '> Version: **2509.1.4**
 
     >
 
@@ -51,7 +51,7 @@ info:
     name: MIT
     url: https://raw.githubusercontent.com/tmunzer/Mist-OAS3.0/main/LICENSE
   title: Mist API
-  version: 2509.1.2
+  version: 2509.1.4
 servers:
 - description: Mist Global 01
   url: https://api.mist.com
@@ -83702,6 +83702,8 @@ components:
       type: array
     site_setting_juniper_srx:
       properties:
+        auto_upgrade:
+          $ref: '#/components/schemas/juniper_srx_auto_upgrade'
         gateways:
           $ref: '#/components/schemas/site_setting_juniper_srx_gateways'
         send_mist_nac_user_info:
@@ -97054,13 +97056,13 @@ components:
           $ref: '#/components/schemas/wlan_airwatch'
         allow_ipv6_ndp:
           default: true
-          description: Only applicable when limit_bcast==true, which allows or disallows
-            ipv6 Neighbor Discovery packets to go through
+          description: Only applicable when `limit_bcast`==`true`, which allows or
+            disallows ipv6 Neighbor Discovery packets to go through
           type: boolean
         allow_mdns:
           default: false
-          description: Only applicable when limit_bcast==true, which allows mDNS /
-            Bonjour packets to go through
+          description: Only applicable when `limit_bcast`==`true`, which allows mDNS
+            / Bonjour packets to go through
           type: boolean
         allow_ssdp:
           default: false
