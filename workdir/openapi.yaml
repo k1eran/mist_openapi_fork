@@ -66405,6 +66405,8 @@ components:
         for_site:
           readOnly: true
           type: boolean
+        gateway_mgmt:
+          $ref: '#/components/schemas/gateway_mgmt'
         id:
           $ref: '#/components/schemas/id'
         idp_profiles:
@@ -68759,6 +68761,16 @@ components:
           type: number
         version_compliance:
           $ref: '#/components/schemas/gateway_compliance_version'
+      type: object
+    gateway_mgmt:
+      description: Gateway settings
+      properties:
+        config_revert_timer:
+          default: 10
+          description: Rollback timer for commit confirmed
+          maximum: 30
+          minimum: 1
+          type: integer
       type: object
     gateway_mgmt_host_out_policy:
       properties:
