@@ -5125,6 +5125,13 @@ paths:
       - $ref: '#/components/parameters/end'
       - $ref: '#/components/parameters/duration'
       - $ref: '#/components/parameters/limit'
+      - description: Pagination cursor. Extract the `search_after` query parameter
+          value from the `next` URL in the previous response to retrieve the next
+          page of results.
+        in: query
+        name: search_after
+        schema:
+          type: string
       - $ref: '#/components/parameters/sort'
       responses:
         '200':
@@ -23040,6 +23047,13 @@ paths:
         schema:
           type: string
       - $ref: '#/components/parameters/limit'
+      - description: Pagination cursor. Extract the `search_after` query parameter
+          value from the `next` URL in the previous response to retrieve the next
+          page of results.
+        in: query
+        name: search_after
+        schema:
+          type: string
       - $ref: '#/components/parameters/start'
       - $ref: '#/components/parameters/end'
       - $ref: '#/components/parameters/duration'
@@ -60830,9 +60844,6 @@ components:
         next:
           example: /api/v1/orgs/b3b9f5e6-67b1-4112-9b4c-6824c565eaeb/alarms/search?end=1711035686&limit=10&search_after=%5B1711031354000%2C+%2256bfa7af-b2db-43ee-a4c8-9b820bbba0e1%22%5D&start=1710949286
           type: string
-        page:
-          example: 1
-          type: integer
         results:
           $ref: '#/components/schemas/alarm_search_results'
         start:
