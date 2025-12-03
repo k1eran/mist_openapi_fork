@@ -71923,10 +71923,13 @@ components:
       - start
       type: object
     insight_metrics_results:
-      description: Results depends on the `metric`
+      description: Results depends on the `metric` - some return numbers (e.g. bytes,
+        ap-count), others return objects
       items:
-        additionalProperties: true
-        type: object
+        anyOf:
+        - type: number
+        - type: object
+          additionalProperties: true
       type: array
       uniqueItems: true
     insight_rogue_ap:
