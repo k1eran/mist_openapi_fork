@@ -3,11 +3,11 @@ info:
   contact:
     email: tmunzer@juniper.net
     name: Thomas Munzer
-  description: '> Version: **2512.1.1**
+  description: '> Version: **2511.1.5**
 
     >
 
-    > Date: **December 3, 2025**
+    > Date: **December 6, 2025**
 
     <div class="notification"> NOTE:<br>Some important API changes will be introduced.
     Please make sure to read the <a href="https://www.juniper.net/documentation/us/en/software/mist/api/http/guides/important-api-changes">announcements</a>
@@ -51,7 +51,7 @@ info:
     name: MIT
     url: https://raw.githubusercontent.com/tmunzer/Mist-OAS3.0/main/LICENSE
   title: Mist API
-  version: 2512.1.1
+  version: 2511.1.5
   x-logo:
     altText: Juniper-MistAI
     backgroundColor: '#FFFFFF'
@@ -71930,12 +71930,14 @@ components:
       description: Results depends on the `metric` - some return numbers (e.g. bytes,
         ap-count), others return objects
       items:
-        anyOf:
-        - type: number
-        - type: object
-          additionalProperties: true
+        $ref: '#/components/schemas/insight_metrics_results_item'
       type: array
       uniqueItems: true
+    insight_metrics_results_item:
+      anyOf:
+      - type: number
+      - type: object
+        additionalProperties: true
     insight_rogue_ap:
       additionalProperties: false
       properties:
